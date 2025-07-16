@@ -1,1 +1,1 @@
-# python-notes
+# python general examples
