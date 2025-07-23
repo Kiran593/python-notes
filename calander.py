@@ -1,5 +1,6 @@
- kilometers=int(input("enter kilometers:"))
- miles=(kilometrs*1.609)
- print(miles)
+import calendar
+year = int(input("Enter the year : "))
+print(calendar.calendar(year))
+
 
 
