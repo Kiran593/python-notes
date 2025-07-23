@@ -127,6 +127,169 @@ print(S[-1:-6:-1])#string  reverse slicing
 print(S[-1:-7:-1])#string  reverse slicing
 
 
+##string case conversation
+
+s="I am Sivangi Kiran"
+print(s.lower())
+print(s.upper())
+print(s.title())
+print(s.capitalize())
+print(s.swapcase())
+
+##remove blank spaces
+
+s="      I am Sivangi Kiran    "
+print(s.strip())
+print(s.rstrip())
+print(s.lstrip())
+
+s="@@@kir@n@@@"
+print(s.strip('@'))
+print(s.rstrip('@'))
+print(s.lstrip('@'))
+
+##split the string
+
+s="I am Sivangi Kiran"
+print(s.split())
+print(s.rsplit())
+print(s.split('a'))
+
+
+##join methods
+
+l=("hi","this","is","kiran","sivangi","from","andhra pradesh")
+print(''.join(l))
+print('@'.join(l))
+print('1432'.join(l))
+print('_'.join(l))
+
+print('@'.join("sivangi kiran".split()))
+
+
+##finding(),indexing(),replace().
+
+s="I am Sivangi Kiran"
+print(s.find('n'))#finding()
+print(s.find(''))
+print(s.find('n,n'))
+
+
+print(s.index('n'))#indexing()
+print(s.index('i'))
+print(s.index(''))
+
+print(s.replace('i','!'))#replace()
+print(s.upper().replace('K','#'))
+print(s.lower().replace('a','#'))
+
+##checking function()
+
+s1="abcd"
+s2="abc1234"
+s3="12345"
+print(s1.isalpha(),s2.isalpha(),s3.isalpha()) #checking the given string is having only alphabets by ujsing isalpha()
+print(s1.isalnum(),s2.isalnum(),s3.isalnum())#checking the given string is having both alphabets and digits by using isalmun()
+print(s1.isdigit(),s2.isdigit(),s3.isdigit()) #checking the given string is having only digits by using isdigits()
+
+##string comparision
+
+s1="abcds"
+s2="abcdefgh"
+print(s1<s2)#checking the given string is having in the dictionary order and  by that order is declaration the greater
+print(s1>s2)
+
+
+##LIST[]
+
+l=[1,2,3,'hi','a','b',2.3,1,2]
+print(l[0])  #index value
+print(l[-1])
+l[0]=100  #assign the value in the index vaslue #mutable operation
+print(l)
+
+
+lst=[]
+lst1=list() # chcking the data type
+print(type(lst),type(lst1))
+
+s="sivangi kiran"
+l=list(s)  #convert the string into list
+print(l)
+print(type(s),type(l))
+
+
+##l=list(map(str,input().split()))#reading list of string values from user,
+##l1=list(map(int,input().split()))#reading list of integer values from user
+##l2=list(map(float,input().split()))#reading list of float values from user
+##print(l,l1,l2)""
+
+#list concatination
+
+l1=[1,2,3,4,5]
+l2=[6,7,8,9,0]
+print(l1+l2)
+
+#list repetation by using '*'
+
+l1=[1,2,3,4]
+print(l1*4)
+
+##list methods
+
+#append()
+l=[1,2,3,'hi','a','b',2.3,1,2]
+l.append(100)
+print(l)
+
+#extend()
+l=[1,2,3,'hi','a','b',2.3,1,2]
+l1=[100,200,300]
+l.extend(l1)
+print(l)
+
+# Using a extend in tuple
+a = [1, 2, 3]
+b = (4, 5)
+a.extend(b)
+print(a) 
+
+# Using a extend in set
+a = [1, 2, 3]
+b = {4, 5}
+a.extend(b)
+print(a)  
+
+# Using a extend in string
+a = ['a', 'b']
+b = "cd"
+a.extend(b)
+print(a)
+
+
+#insert()
+
+l=[1,2,3,'hi','a','b',2.3,1,2]
+l.insert(100,'kiran')
+print(l)
+
+l=[1,2,3,'hi','a','b',2.3,1,2]
+l.insert(0,'kiran')
+print(l)
+
+#index()
+
+l=[1,2,3,'hi','a','b',2.3,1,2]
+ind=l.index('a')
+print(ind)
+
+l=[1,2,3,'hi','a','b',2.3,1,2]
+ind=l. backwardindex(1)
+print(ind)
+
+
+
+
 
 
 
